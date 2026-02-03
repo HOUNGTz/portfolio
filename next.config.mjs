@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
+const isGithubPages = process.env.GITHUB_ACTIONS === 'true';
+
 const nextConfig = {
-  basePath: '/portfolio',
+  basePath: isGithubPages ? '/portfolio' : '',
   images: {
     domains: ['github.com', 'avatars.githubusercontent.com'],
     unoptimized: true,
