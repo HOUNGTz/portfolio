@@ -16,6 +16,7 @@ import {
   LayoutDashboard,
   Briefcase,
 } from "lucide-react";
+import { getAssetPath } from "@/lib/utils";
 
 const projects = [
   
